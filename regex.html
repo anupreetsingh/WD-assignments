@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Validation</title>
+    <script>
+        function validate()
+        {
+            var input = document.getElementById("name").value;
+            
+            var regx = /E00/i;
+            
+            if(regx.test(input))
+                alert("Valid");
+            else
+                alert("Invalid");
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="validate()">
+        <input type="text" id="name" placeholder="User Name">
+        <input type="submit">
+    </form>
+</body>
+</html>
